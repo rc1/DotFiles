@@ -147,3 +147,27 @@ alias gc="git commit -m"
 alias gca="git commit -am"
 alias gr="git rm"
 alias ga="git add"
+
+# JSDocs
+alias superjsdoc="jsdoc . -t=$JSDOCTEMPLATEDIR -d=./docs/"
+
+# Sublime
+alias e="subl -n ."
+
+# Aliases
+alias a="cat ~/.aliases"
+
+# Tar
+alias targz="tar -cvzf"
+
+# ASCII
+# requirse brew install figlet
+alias ascii="/usr/local/bin/figlet -f smslant -w 132"
+
+# Wget
+# Just like the movies
+alias wgetall="get -r -np -nH –cut-dirs=3 -R index.html"
+
+# Serial
+alias seriallist="sudo dmesg | grep tty"
+alias serialrebootl="sudo kextload /System/Library/Extensions/FTDIUSBSerialDriver.kext"
