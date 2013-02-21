@@ -78,3 +78,7 @@
 
 [push]
 	default = simple
+
+[user]
+	email = ross@electricglen.com
+	name = Ross Cairns
