@@ -7,18 +7,18 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias p="cd ~/Projects"
-alias g="git"
-alias h="history"
-alias j="jobs"
-alias v="vim"
-alias m="mate ."
-alias s="subl ."
-alias o="open"
-alias oo="open ."
+#alias d="cd ~/Documents/Dropbox"
+#alias dl="cd ~/Downloads"
+#alias dt="cd ~/Desktop"
+#alias p="cd ~/Projects"
+#alias g="git"
+#alias h="history"
+#alias j="jobs"
+#alias v="vim"
+#alias m="mate ."
+#alias s="subl ."
+#alias o="open"
+#alias oo="open ."
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -28,7 +28,7 @@ else # OS X `ls`
 fi
 
 # List all files colorized in long format
-alias l="ls -l ${colorflag}"
+alias ll="ls -l ${colorflag}"
 
 # List all files colorized in long format, including dot files
 alias la="ls -la ${colorflag}"
@@ -130,3 +130,20 @@ done
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
+
+#
+#
+# Ross
+
+# Nano with line numbers
+alias nano="nano -c"
+
+# Use bashmarks 
+source  ~/.local/bin/bashmarks.sh
+
+# Git
+alias gs="git status"
+alias gc="git commit -m"
+alias gca="git commit -am"
+alias gr="git rm"
+alias ga="git add"
