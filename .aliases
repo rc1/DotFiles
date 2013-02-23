@@ -171,3 +171,7 @@ alias wgetall="get -r -np -nH –cut-dirs=3 -R index.html"
 # Serial
 alias seriallist="sudo dmesg | grep tty"
 alias serialrebootl="sudo kextload /System/Library/Extensions/FTDIUSBSerialDriver.kext"
+
+# Forever
+alias f="forever"
+alias fl="forever list"
