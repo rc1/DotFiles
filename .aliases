@@ -166,7 +166,7 @@ alias ascii="/usr/local/bin/figlet -f smslant -w 132"
 
 # Wget
 # Just like the movies
-alias wgetall="get -r -np -nH –cut-dirs=3 -R index.html"
+alias wgetall="wget -r -np -nH –cut-dirs=3 -R index.html"
 # need to repeat last arg
 # wget --adjust-extension --span-hosts --convert-links --backup-converted --page-requisites --recursive --domains=nordicarch.com nordicarch.com
 alias wgetsite="wget --adjust-extension --span-hosts --convert-links --backup-converted --page-requisites --recursive --domains="
