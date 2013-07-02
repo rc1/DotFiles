@@ -178,3 +178,6 @@ alias serialrebootl="sudo kextload /System/Library/Extensions/FTDIUSBSerialDrive
 # Forever
 alias f="forever"
 alias fl="forever list"
+
+# Node webkit
+alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
