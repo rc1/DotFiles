@@ -19,6 +19,7 @@ alias -- -="cd -"
 #alias s="subl ."
 #alias o="open"
 #alias oo="open ."
+#alias e="emacs-24.3"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -131,10 +132,6 @@ alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
-#
-#
-# Ross
-
 # Nano with line numbers
 alias nano="nano -c"
 
@@ -150,9 +147,6 @@ alias ga="git add"
 
 # JSDocs
 alias superjsdoc="jsdoc . -t=$JSDOCTEMPLATEDIR -d=./docs/"
-
-# Sublime
-alias e="subl -n ."
 
 # Aliases
 alias a="cat ~/.aliases"
