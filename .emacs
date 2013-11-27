@@ -12,3 +12,6 @@
   (defun track-mouse (e))
   (setq mouse-sel-mode t)
 )
+
+;; Theme
+(load-theme 'graham t)
