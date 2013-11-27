@@ -19,7 +19,7 @@ alias -- -="cd -"
 #alias s="subl ."
 #alias o="open"
 #alias oo="open ."
-#alias e="emacs-24.3"
+#alias em="emacs-24.3"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
