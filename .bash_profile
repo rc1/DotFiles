@@ -1,5 +1,6 @@
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH"
+homebrew=/usr/local/bin:/usr/local/sbin
+export PATH="$HOME/bin:$homebrew:$PATH"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
