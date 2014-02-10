@@ -17,7 +17,7 @@ function calc() {
 }
 
 # Create a new directory and enter it
-function mkdirgo() {
+function mkdircd() {
 	mkdir -p "$@" && cd "$@"
 }
 
