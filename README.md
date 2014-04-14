@@ -1,4 +1,4 @@
-# Ross’ dotfiles
+# dotfiles
 
 ## Installation
 
