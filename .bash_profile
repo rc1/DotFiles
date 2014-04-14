@@ -38,3 +38,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+
+# Add Surveyor Completions
+[ -e $HOME/.local/bin/surveyor ] && source $HOME/.local/bin/surveyor
