@@ -109,6 +109,13 @@ alias wgetall="wget -r -np -nH –cut-dirs=3 -R index.html"
 # wget --adjust-extension --span-hosts --convert-links --backup-converted --page-requisites --recursive --domains=nordicarch.com nordicarch.com
 alias wgetsite="wget --adjust-extension --span-hosts --convert-links --backup-converted --page-requisites --recursive --domains="
 
+# Wget Libaries
+alias wget:jquery="wget http://code.jquery.com/jquery-2.1.0.min.js"
+alias wget:undersource="wget http://underscorejs.org/underscore-min.js"
+alias wget:gl-matrix="wget https://raw.githubusercontent.com/toji/gl-matrix/master/dist/gl-matrix-min.js"
+alias wget:w-js="wget https://raw.githubusercontent.com/theworkers/W.js/master/build/W.min.js"
+alias wget:symphony="wget http://www.getsymphony.com/download/releases/current; unzip current"
+
 # Serial
 alias seriallist="sudo dmesg | grep tty"
 alias serialrebootl="sudo kextload /System/Library/Extensions/FTDIUSBSerialDriver.kext"
