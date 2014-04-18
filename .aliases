@@ -83,6 +83,9 @@ alias badge="tput bel"
 # Nano with line numbers
 alias nano="nano -c"
 
+# Color cat
+alias colorcat='pygmentize -g'
+
 # Use bashmarks 
 source  ~/.local/bin/bashmarks.sh
 
