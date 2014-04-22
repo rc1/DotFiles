@@ -3,6 +3,11 @@ function xtimes () {
 	for ((n=0;n<$1;n++)); do ${*:2}; done
 }
 
+# Count the number of files in a folder recursivly
+function countfiles() {
+	find . -type f | wc -l
+}
+
 # Simple calculator
 function calc() {
 	local result=""
