@@ -5,10 +5,23 @@ export PATH="$HOME/bin:$HOME/.local/bin:$HOME/.local/bin/depot_tools:$homebrew:$
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
+for file in ~/.{path,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file
+
+# Load the bash_prompt if we have a non-dumb terminal system (i.e. not emacs)
+case "$TERM" in
+"dumb")
+    PS1="> "
+    ;;
+xterm*|rxvt*|eterm*|screen*)
+    [ -r ".bash_prompt" ] && source ".bash_prompt"
+    ;;
+*)
+    PS1="> "
+    ;;
+esac
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
