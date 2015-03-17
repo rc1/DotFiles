@@ -119,6 +119,7 @@ alias wget:gl-matrix="wget https://raw.githubusercontent.com/toji/gl-matrix/mast
 alias wget:w-js="wget https://raw.githubusercontent.com/theworkers/W.js/master/build/W.min.js"
 alias wget:symphony="wget http://www.getsymphony.com/download/releases/current; unzip current"
 alias wget:superagent="wget https://raw.githubusercontent.com/visionmedia/superagent/master/superagent.js"
+alias wget:lodash="wget https://raw.githubusercontent.com/lodash/lodash/2.4.1/dist/lodash.min.js"
 
 # Serial
 alias seriallist="sudo dmesg | grep tty"
