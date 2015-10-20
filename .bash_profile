@@ -60,7 +60,7 @@ if [ "$(uname)" == "Darwin" ]; then
     export NVM_DIR=~/.nvm
     source $(brew --prefix nvm)/nvm.sh
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-    source ~/.nvm
+    source ~/.nvm/nvm.sh
 elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
     echo "No NVM for windows"
 fi
