@@ -62,7 +62,7 @@ if [ "$(uname)" == "Darwin" ]; then
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     source ~/.nvm
 elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
-    # Do something under Windows NT platform
+    echo "No NVM for windows"
 fi
 
 # Node Repl
