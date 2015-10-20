@@ -56,8 +56,14 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 [ -e $HOME/.local/bin/surveyor ] && source $HOME/.local/bin/surveyor
 
 # NVM
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+if [ "$(uname)" == "Darwin" ]; then
+    export NVM_DIR=~/.nvm
+    source $(brew --prefix nvm)/nvm.sh
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    source ~/.nvm
+elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
+    # Do something under Windows NT platform
+fi
 
 # Node Repl
 export NODE_REPL_HISTORY_FILE=~/.node_reply_history
