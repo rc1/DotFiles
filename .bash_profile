@@ -55,9 +55,5 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # Add Surveyor Completions
 [ -e $HOME/.local/bin/surveyor ] && source $HOME/.local/bin/surveyor
 
-# NVM
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
 # Node Repl
 export NODE_REPL_HISTORY_FILE=~/.node_reply_history
