@@ -86,7 +86,7 @@ alias nano="nano -c"
 # Color cat
 alias colorcat='pygmentize -g'
 
-# Use bashmarks 
+# Use bashmarks
 source  ~/.local/bin/bashmarks.sh
 
 # Git
@@ -131,3 +131,6 @@ alias fl="forever list"
 
 # Node webkit
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
+
+# Chrome
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
