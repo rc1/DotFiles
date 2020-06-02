@@ -1,3 +1,6 @@
+# Move to home directory (fix WSL2)
+cd $HOME
+
 # Add `~/bin` and `~/.local/bin` to the `$PATH`
 homebrew=/usr/local/bin:/usr/local/sbin
 export PATH="$HOME/bin:$HOME/.local/bin:$HOME/.local/bin/depot_tools:$homebrew:$PATH"
